@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/540a58ae07.js"></script>
+    <link rel="stylesheet" href ="static/bootstrap_social.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="static/style_dashboardsum.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid col-lg-12 col-sm-12">
+        <!-- Personal brand logo-->
+        <nav class="navbar transparent navbar-expand-md">
+            <div class ="navbar-header">
+                <button type ="button" class ="navbar-toggler" data-toggle="collapse" data-target ="navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><b>Mengjia Sun</b></a>
+            </div>
+            <!-- Main  -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav_item"><a class="nav-link" href="index.html"><b>Home</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="about.html"><b>About</b></a></li>
+                    <li class="nav_item dropdown"><a class = "nav-link dropdown-toggle" data-toggle="dropdown" href="project.html"><b>Projects</b></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="massshootingsummary.html"><b>Mass Shooting Data Analysis</b></a>
+                            <a class="dropdown-item" href="twittersentimentsummary.html"><b>Twitter Sentiment & ML</b></a>
+                            <a class="dropdown-item" href="dashboardsummary.html"><b>Restaurant BI Dashboard</b></a>
+                            <a class="dropdown-item" href="collisionsummary.html"><b>NYC Motor Collisions Analysis</b></a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav_item"><a class="nav-link" href="blog.html"><b>Blog</b></a></li> -->
+                    <li class="nav_item"><a class="nav-link" href="resume.html"><b>Resume</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="contact.html"><b>Contact</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- content -->
+    <div class ="content">
+        <h1>Restaurant Business Intelligence Dashboard
+        <a class="btn btn-lg btn-social-icon btn-github" href="https://github.com/trinidadcisneros/GroupProject2-Restaurant">
+        <span class="fab fa-github"></span></a>
+        </h1>
+        <h5>By Xu Yang, Ramon Gomez, Trinidad, Mengjia Sun</h5>
+        <hr>
+        <h2>Introduction</h2>
+        <p>Very often when a potential business owner decides to open a restaurant, 
+            they choose location in the neighborhood that they’re most familiar with 
+            or based on recommendation from friends, families; however, their choice might 
+            not be the best for business. For example, they choose to open a high-end restaurant 
+            a certain neighborhood, but that neighborhood doesn’t have lots of high-income population.
+             With vast data resources on Internet, we decide to create a web-based consultation tool 
+             to provide results business intelligence, in particular, competition.</p>
+        <hr>
+        <h2>Project Objectives</h2>
+        <p>Allow users to geophracially visualize the restaurant lanscape in LA</p>
+        <p>Allow users to filter landscape by the cuisine category 
+            (American, Chinese, Breakfast, Mexican, etc)</p>
+        <p>Allow users to view the average price distribution 
+            (mean meals for 2) for all restaurants in a given cuisine category</p>
+        <hr>
+        <h2>Project Scope</h2>
+        <p>restaurants in LA only</p>
+        <hr>
+        <h2>Dataset Source</h2>
+        <p>Zomato API: https://developers.zomato.com/api</p>
+        <hr>
+        <h2>Project Results</h2>
+        <div class="projectpic">
+        <img src="image/dashboard.jpg"></div>
+
+    </div>
+</body>
+</html>
+

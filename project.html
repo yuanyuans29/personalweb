@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Welcome to my home page</title>
+    <link rel="stylesheet" href="static/style_projectsummary.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid col-lg-12 col-sm-12">
+        <!-- Personal brand logo-->
+        <nav class="navbar transparent navbar-expand-md">
+            <div class ="navbar-header">
+                <button type ="button" class ="navbar-toggler" data-toggle="collapse" data-target ="navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Mengjia Sun</a>
+            </div>
+            <!-- Main  -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav_item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav_item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav_item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav_item dropdown"><a class = "nav-link dropdown-toggle" data-toggle="dropdown" href="project.html">Projects</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="projectone.html">Mass</a>
+                            <a class="dropdown-item" href="projecttwo.html">Humidity</a>
+                            <a class="dropdown-item" href="projectthree.html">Cloudiness</a>
+                            <a class="dropdown-item" href="projectfour.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav_item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav_item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- content -->
+    <div class = "content">
+        <div class = "row align-items-center justify-content-center">
+            <div class = "projectone col-sm-10 col-md-5 col-lg-5">
+                <h1>Analysis of Mass Shootings in US, 1966-2016</h1>
+                <p>Extract, transform/clean Stanford MSA data and explore correlation of multiple factors 
+                    present correlation of </p>
+                <img class = "img1 mx-auto d-block" src = "image/projectone.jpg">
+            </div>
+            <div class = "projecttwo float right col-sm-12 col-md-6 col-lg-6">
+                <h1>A User Interactive Dashboard</h1>
+                <p>A web-based consulting tool providing business 
+                    solutions for small restaurant owners</p>
+            </div>
+        </div>
+        <hr>
+        <div class = "row align-items-center justify-content-center">
+            <div class = "projectthree col-sm-10 col-md-6 col-lg-6">
+                <h1>Sentiment Analysis of Top Influencer on Twitter</h1>
+                <p>Use Natural Language Processing(NLP), specifically sentiment analysis and 
+                    text classification, to visualize the sentiment of the most influential politicians 
+                    on twitter</p>
+                <img class = "img2 mx-auto d-block" src = "image/twitterproject.jpg">
+            </div>
+            <div class = "projecttwo col-sm-12 col-md-6 col-lg-6">
+                <h1>Motor Vehicle Collisions during 2019 Memorial Day Weekend</h1>
+                <p>Use d3.js, leaflet.js to present statistics of vehicle collisions
+                during 3-day holiday weekend</p>
+                <img class = "img2 mx-auto d-block" src = "image/projectfour.jpg">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://backgrounddownload.com/web-agency-background/">Photo provided by backgrounddownload.com</a>
+    </footer>
+</body>
+</html>

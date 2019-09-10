@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/540a58ae07.js"></script>
+    <link rel="stylesheet" href ="static/bootstrap_social.css">
+    <title>twitter Analysis</title>
+    <link rel="stylesheet" href="static/style_sentimentsum.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid col-lg-12 col-sm-12">
+        <!-- Personal brand logo-->
+        <nav class="navbar transparent navbar-expand-md">
+            <div class ="navbar-header">
+                <button type ="button" class ="navbar-toggler" data-toggle="collapse" data-target ="navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><b>Mengjia Sun</b></a>
+            </div>
+            <!-- Main  -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav_item"><a class="nav-link" href="index.html"><b>Home</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="about.html"><b>About</b></a></li>
+                    <li class="nav_item dropdown"><a class = "nav-link dropdown-toggle" data-toggle="dropdown" href="project.html"><b>Projects</b></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="massshootingsummary.html"><b>Mass Shooting Data Analysis</b></a>
+                            <a class="dropdown-item" href="twittersentimentsummary.html"><b>Twitter Sentiment & ML</b></a>
+                            <a class="dropdown-item" href="dashboardsummary.html"><b>Restaurant BI Dashboard</b></a>
+                            <a class="dropdown-item" href="collisionsummary.html"><b>NYC Motor Collisions Analysis</b></a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav_item"><a class="nav-link" href="blog.html"><b>Blog</b></a></li> -->
+                    <li class="nav_item"><a class="nav-link" href="resume.html"><b>Resume</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="contact.html"><b>Contact</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+        <h1>Top Twitter Politician Influencers Sentiment Analysis
+        <a class="btn btn-lg btn-social-icon btn-github" href="https://github.com/warrenrross/Language-Processing-Project">
+        <span class="fab fa-github"></span>
+        </a></h1>
+    
+        <h5>By Mengjia Sun, Bryan Skedgell, Warren Ross & Charlotte Acevedo</h5>
+        <hr>
+        <h2>Introduction</h2>
+        <p>Increasing number of public features likes to use social 
+            media as channel to express their voice/attitude toward a 
+            specific topic. The ability to extract insights from social data 
+            is become extremely powerful as it allows us to gain an overview 
+            of wider public opinions. </p>
+        <p>The goal of this project is to use sentiment analysis 
+            (also known as Opinion Mining), a field within Natural 
+            Language Processing (NLP) and test classification to visualize 
+            the sentiment of tweets from the top 14 most influential Republican 
+            and Democrats politicians. </p>
+        <hr>
+        <h2>Data Source</h2>
+        <p>Twitter API: https://developer.twitter.com/</p>
+        <hr>
+        <h2>Project Scope</h2>
+        <p>1. Twitter profile selection: choose to only extract tweets from Barack Obama (@BarackObama), Donald J. Trump (@realDonaldTrump), Bernie Sanders (@BernieSanders), 
+            Elizabeth Warren (@SenWarren), Alexandria Ocasio-Cortez (@AOC), Marco Rubio (@marcorubio),
+             Mike Pence (@mike_pence), Joe Biden (@JoeBiden), Ted Cruz (@tedcruz), Liz Cheney (@Liz_Cheney),
+            @HouseGOP, @HouseDemocrats, @SenateDems, @SenateGOP</p>
+        <p>2. Twitter limited 3200 tweets per API request. We feel it’s enough data with one 
+            API request per politician for us to perform sentiment analysis and draw conclusions.</p>
+        <p>3. During data extract step, we choose to extract original text tweets, 
+            excluding retweets, comments and replies.</p>
+        <hr>
+        <h2>Project Results</h2>
+        <hr>
+        <div class="row">
+            <div class ="col-lg-6 col-md-6 col-sm-12">
+                <div class ="sitepic1"><img src="image/sentiment_home.jpg"></div>
+            </div>
+            <div class ="col-lg-6 col-md-6 col-sm-12">
+                <div class ="sitepic2"><img src="image/twittersentiment.jpg"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class ="col-lg-6 col-md-6 col-sm-12">
+                <div class ="sitepic3"><img src="image/tryit.jpg"></div>
+            </div>
+            <div class ="col-lg-6 col-md-6 col-sm-12">
+                <div class ="sitepic4"><img src="image/tokenizing.jpg"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- <a href ="https://github.com/warrenrross/Language-Processing-Project">Project Git Repo</a> -->
+            <h2>Project Running Instruction</h2>
+            <ul>
+            <li>git clone: https://github.com/warrenrross/Language-Processing-Project.git</li>
+            <li>access folder "Lanuage-Processing-Project/app" via commandline</li>
+            <li>run "python app.py"</li>
+            <li>open browser and put address: 127.0.0.1:5000 </li></ul> 
+        </div>
+    </div>
+</body>
+</html>

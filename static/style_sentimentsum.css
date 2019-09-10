@@ -1,0 +1,93 @@
+/* style sheet */
+body, html{
+    height:auto;
+    width:auto;
+}
+
+body {
+    /* The link of image used */
+    background-image:URL("../image/web-agency-background.jpg");
+    /* full height */
+    /* background-position: center; */
+}
+
+body {
+    color: whitesmoke;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+a { color: inherit; }
+a:hover { color: gray;} 
+
+.navbar-brand{
+    font-size: 40px;
+    font-family: 
+}
+
+.dropdown-menu {
+    background-color: rgb(39, 39, 39);
+}
+.dropdown-item {
+    color:whitesmoke;
+}
+
+footer {
+    color:rgb(39, 39, 39);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+.content{
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+h1,h5 {
+    text-align: center;
+}
+
+.sitepic1{
+    height: 400px;
+    width: 600px;
+}
+
+.sitepic1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.sitepic2{
+    height: 400px;
+    width: 600px;
+}
+
+.sitepic2 img{
+    height: 100%;
+    width: 100%;
+}
+
+.sitepic3{
+    height: 400px;
+    width: 600px;
+}
+
+.sitepic3 img{
+    height: 100%;
+    width: 100%;
+}
+
+.sitepic4{
+    height: 400px;
+    width: 600px;
+}
+
+.sitepic4 img{
+    height: 100%;
+    width: 100%;
+}

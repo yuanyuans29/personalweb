@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/540a58ae07.js"></script>
+    <link rel="stylesheet" href ="static/bootstrap_social.css">
+    <title>contact</title>
+    <link rel="stylesheet" href="static/style_contact.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid col-lg-12 col-sm-12">
+        <!-- Personal brand logo-->
+        <nav class="navbar transparent navbar-expand-md">
+            <div class ="navbar-header">
+                <button type ="button" class ="navbar-toggler" data-toggle="collapse" data-target ="navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><b>Mengjia Sun</b></a>
+            </div>
+            <!-- Main  -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav_item"><a class="nav-link" href="index.html"><b>Home</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="about.html"><b>About</b></a></li>
+                    <li class="nav_item dropdown"><a class = "nav-link dropdown-toggle" data-toggle="dropdown" href="project.html"><b>Projects</b></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="massshootingsummary.html"><b>Mass Shooting Data Analysis</b></a>
+                            <a class="dropdown-item" href="twittersentimentsummary.html"><b>Twitter Sentiment & ML</b></a>
+                            <a class="dropdown-item" href="dashboardsummary.html"><b>Restaurant BI Dashboard</b></a>
+                            <a class="dropdown-item" href="collisionsummary.html"><b>NYC Motor Collisions Analysis</b></a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav_item"><a class="nav-link" href="blog.html"><b>Blog</b></a></li> -->
+                    <li class="nav_item"><a class="nav-link" href="resume.html"><b>Resume</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="contact.html"><b>Contact</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Content -->
+    <div class= "content col-lg-12 col-md-12 col-sm-12">
+        <h1>Say hello!</h1>
+        <form id ="contact-form"> 
+            <div class="row">
+            <input name ="name" required="" size="50" type="text" placeholder="Name" /></div>
+            <div class ="row">
+            <input name ="email" required="" size="50" type="email" placeholder="Enter email" /></div>
+            <div class="row">
+            <textarea id ="message" name="message" placeholder="Your Message" type="text"></textarea></div>
+        </form>
+        <!-- <div id="success"> 
+            <div>Your message was sent successfully. Thanks!
+            <span class="mdi mdi-close" id="close"></span></div>
+        </div> -->
+        <input class="button" id="submit" type="submit" value="SUBMIT" /> 
+    </div>
+</body>
+<footer>
+    <div class="justify-content-center">
+        <a class="btn btn-social-icon btn-google" href="mengjsun@gmail.com"><span class="fab fa-google"></span></a>
+        <a class="btn btn-social-icon btn-linkedin"href ="https://www.linkedin.com/in/mengjia-sun-b5070890/"><span class="fab fa-linkedin"></span></a></ul>
+        <a class="btn btn-social-icon btn-twitter" href ="https://twitter.com/sun_mengjia"><span class="fab fa-twitter"></span></a>
+        <a class="btn btn-social-icon btn-github" href ="https://github.com/yuanyuans29"><span class="fab fa-github"></span></a>
+    </div>
+</footer>
+</html>

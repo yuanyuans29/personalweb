@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/540a58ae07.js"></script>
+    <link rel="stylesheet" href ="static/bootstrap_social.css">
+    <title>twitter Analysis</title>
+    <link rel="stylesheet" href="static/style_massshootingsum.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid col-lg-12 col-sm-12">
+        <!-- Personal brand logo-->
+        <nav class="navbar transparent navbar-expand-md">
+            <div class ="navbar-header">
+                <button type ="button" class ="navbar-toggler" data-toggle="collapse" data-target ="navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><b>Mengjia Sun</b></a>
+            </div>
+            <!-- Main  -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav_item"><a class="nav-link" href="index.html"><b>Home</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="about.html"><b>About</b></a></li>
+                    <li class="nav_item dropdown"><a class = "nav-link dropdown-toggle" data-toggle="dropdown" href="project.html"><b>Projects</b></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="massshootingsummary.html"><b>Mass Shooting Data Analysis</b></a>
+                            <a class="dropdown-item" href="twittersentimentsummary.html"><b>Twitter Sentiment & ML</b></a>
+                            <a class="dropdown-item" href="dashboardsummary.html"><b>Restaurant BI Dashboard</b></a>
+                            <a class="dropdown-item" href="collisionsummary.html"><b>NYC Motor Collisions Analysis</b></a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav_item"><a class="nav-link" href="blog.html"><b>Blog</b></a></li> -->
+                    <li class="nav_item"><a class="nav-link" href="resume.html"><b>Resume</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="contact.html"><b>Contact</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class = "content">
+        <!-- article header -->
+        <h1>Stanford Mass Shooting Data 1966-2016 Analysis
+        <a class="btn btn-lg btn-social-icon btn-github" href="https://github.com/yuanyuans29/mass_shooting_analysis">
+        <span class="fab fa-github"></span></a>
+        </h1>
+        <h5>by Mengjia Sun, Eddie Perez, Angelica Gomez</h5>
+        <hr>
+        <h2>Introduction</h2>
+        <p>The number of mass shooting has quickened in recent years 
+            According to Wall Street Journal, nearly 200 people were 
+            killed in mass shooting for merely past two years. How can we mitigate more shootings? 
+            Is there any common trends we can learn from past incidents? Here we're going to dip into history and explore correlations 
+            among incidents and different factors, like shooter's choose shooting location, victims injury from different gun types</p>
+        <hr>
+        <p>The goal of this project is to use Python Matplotlib 
+            to explore correlations among number of victims, weapon type, 
+            shooting locations, fatality rate in mass shooting incidents from 1966-2016. 
+            This could provide us some insights of behind the scene story of these mass shootings.</p>
+        <hr>
+        <h2>Data Source</h2>
+        <p>Stanford mass shooting csv file</p>
+        <hr>
+        <h2>Definition of Mass Shooting</h2>
+        <p>The definition of mass shooting used for the Stanford database is 3 or more shooting victims 
+            (not necessarily fatalities), not including the shooter. Identifiably gang, 
+            drug or organized crime related shootings are not included in the database</p>
+        <hr>
+        <h2>Hypothesis</h2>
+            <p>1. If mass shootings in the United States are higher in certain geographical 
+                areas and location types, then geography and location type play a crucial 
+                part in the prevalence of mass shootings</p>
+            <p>2. If a firearm type, police department proximity, and number 
+                of firearms is tied to higher fatalities, then the total amount of 
+                victims can be dependent on these variables</p>
+        <h2>Analytical Findings</h2>
+            <div class ="row">
+                <div class = "bar1 col-lg-6 col-md-6 col-sm-12">
+                    <div><p>1. Among all type of firearm used in mass shooting from 1966-2016, 
+                    handgun caused more than 1000 victims, which is the single type of firearm 
+                    caused the highest number of victims. Also, unsurprisingly, the number of victim 
+                    from incidents involved with multiple guns was relatively high as well.</p></div>
+                    <div class="msa_image1"><img src="image/mass_victimfirearmtype.png"></div>
+                </div>
+                <div class = "pie col-lg-6 col-md-6 col-sm-12">
+                    <div><p>2. Among of victims from different type of firearm, 39% of handgun 
+                        victims were killed and 35% of multiple gun victims were killed. 
+                        Thousands of families were shattered and psychological scars in thousands of survivors</p></div>
+                    <div class="msa_image2"><img src="image/fatalitypercent.png"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class = "bar2 col-lg-6 col-md-6 col-sm-12">
+                    <div><p>3. Among all states, California has the highest number of mass shooting 
+                        incidents in history. Florida, Texas, Georgia are following California 
+                        among the large number of mass shooting. According to a recent online article,
+                        researchers have begun to see a trend that places with fewer gun restrictions
+                        consistently have higher rate of mass shootings.</p></div>
+                    <div class="msa_image3"><img src="image/shootingsvsstates.png"></div>
+                </div>
+                <div class = "bar3 col-lg-6 col-md-6 col-sm-12">
+                    <div><p>4. When we investigate further on location, surprisingly, 
+                        most of mass shooting happened at residential places.
+                        Fewer happened at schools, recreation places. Media often 
+                        pay more attention to mass shooting at public places which 
+                        could cause our misconception of most mass shooting happened at 
+                        public places or confusing public of the definition of mass shooting</p></div>
+                    <div class="msa_image4"><img src="image/shootingsvslocation.png"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class ="scatter1 col-lg-6 col-md-6 col-sm-12">
+                    <div><p>5. Another factor we investigated using available data is the proximity 
+                        of police station near mass shooting location. Presumably, 
+                        the closer of police station, the faster police could arrive at shooting 
+                        site and lesser victim would be. According to our findings, most police station 
+                        located within 5miles radius from shooting site. There is no obvious trends that 
+                        shows any correlation between the proximity of police station and number of victims 
+                        from mass shooting</p></div>
+                    <div class="msa_image5"><img src="image/victimvspoliceproximity.png"></div>
+                </div>
+                <div class="scatter2 col-lg-6 col-md-6 col-sm-12">
+                    <div><p>6. Number of gun used by shooter could also have impact on the number 
+                            of victims. Presumably, the more guns they used, more number of victims 
+                            should be recorded. Our findings shows majority of shooters use less than 
+                            3 guns, and there is no obvious correlation between number of gun used and 
+                            number of victims. In some incidents, shooter used only one gun, but caused 
+                            more than 20 victims</p></div>
+                    <div class="msa_image6"><img src="image/victimvsgun.png"></div>
+                </div>
+            </div>
+        <hr>
+        <h2>Conclusion</h2>
+        <p>According to Wall Street Journal, The mass shooting in U.S from 1966-2012 
+            accounted for 31% of global shooting incidents, more than any other country. 
+            And since 2017, the number of mass shooting has increased dramatically and more 
+            frequently. They occur without warning and terrifying public. Hopefully, 
+            our analysis could provide some valuable insights about mass shooting and 
+            implement necessary restrictions to control mass shooting incidents</p>
+    </div>
+</body>
+<!-- <footer>
+    <a href="https://backgrounddownload.com/web-agency-background/">Background image provided by backgrounddownload.com</a>
+</footer> -->
+</html>

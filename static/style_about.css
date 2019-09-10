@@ -1,0 +1,73 @@
+/* style sheet */
+body, html{
+    height:100%;
+    width:100%;
+}
+
+body {
+    /* The link of image used */
+    background-image:URL("../image/web-agency-background.jpg");
+    /* full height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+body {
+    color: whitesmoke;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+a { color: inherit; }
+a:hover { color: gray;} 
+
+.navbar-brand{
+    font-size: 40px;
+    font-family: 
+}
+
+.dropdown-menu {
+    background-color: rgb(39, 39, 39);
+}
+.dropdown-item {
+    color:whitesmoke;
+}
+
+footer {
+    color:rgb(39, 39, 39);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+
+.content {
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+
+.pic{
+    height:300px;
+    width:240px;
+    margin-right:100px;
+}
+.pic img{
+    height:100%;
+    width:100%;
+}
+
+h1 {font-size: 20px;}
+h2 {font-size: 18px;
+    padding-left: .5em;}
+p{
+    font-size:16px;
+    padding-left: 1em;}
+li {
+    font-size:16px;
+    position: relative;
+}

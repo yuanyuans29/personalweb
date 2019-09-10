@@ -1,0 +1,43 @@
+/* style sheet */
+body, html{
+    height: auto;
+    width: auto;
+}
+
+body {
+    /* The link of image used */
+    background-image:URL("../image/web-agency-background.jpg");
+    /* full height */
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+body {
+    color: whitesmoke;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+a { color: inherit; }
+a:hover { color: gray;} 
+
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.img1 {
+    width: 420px;
+    height: 280px
+}
