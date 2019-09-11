@@ -45,25 +45,52 @@ footer {
     margin-bottom: 50px;
   }
 
-h1 {
+.contact-title{
+    margin-top: 50px;
+}
+
+h1,h3 {
     text-align: center;
 }
 
-/* #message {
-    width:700px;
-    height: 200px;
-  } */
-/* .row {
-    text-align: center;
-} */
-
 form { 
-    margin: 0 auto; 
-    width:300px;
+    margin-top: 50px; 
     }
-  /* #footer{
-    display: table;
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: gray;
+    font-size:18px;
+    /* margin-bottom: 16px; */
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-} */
+    margin:auto;
+    display: block;
+}
+
+input{
+    height:45px;
+}
+
+form .submit {
+    background:#ff5722;
+    border-color: transparent;
+    color:#fff;
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#sumbit:hover {
+    background-color:gray;
+    cursor: pointer;
+}
+
+.btn-social-icon{
+    margin-right: 20px;
+}
